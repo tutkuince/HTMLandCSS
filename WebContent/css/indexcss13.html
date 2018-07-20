@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CSS Selectors</title>
+<style>
+/* 	 	*   				* 			-> Selects all elements 
+		.class 				.intro 		-> Selects all elements with class="intro"
+		#id 				#firstname 	-> Selects the element with id="firstname"
+		element 			p 			-> Selects all <p> elements
+		element,element 	div, p 		-> Selects all <div> elements and all <p> elements
+		element element 	div p 		-> Selects all <p> elements inside <div> elements
+		element>element 	div>p 		-> Selects all <p> elements where the parent is a <div> element
+*/
+* {
+	background-color: dodgerBlue;
+	font-family: monospace;
+	color: white;
+}
+
+h1 {
+	background-color: orange;
+}
+
+div {
+	background-color: purple;
+}
+
+span {
+	background-color: red;
+}
+
+#special {
+	background-color: blue;
+}
+
+.specialP {
+	background-color: tomato;
+}
+
+h2, h3 {
+	background-color: black;
+	color: white;
+}
+
+div p {
+	background-color: red;
+}
+
+p > b {
+	background-color: yellow;
+	color: red;
+}
+</style>
+</head>
+<body>
+	<h1>CSS Selectors</h1>
+	<p id="special">Lorem ipsum dolor sit amet, consectetur adipiscing
+		elit. Ut id odio ac odio rutrum eleifend sed consectetur metus.
+		Vestibulum nec nisi ac arcu fringilla tincidunt et in nulla.
+		Vestibulum congue, sapien nec mollis tristique, elit dolor scelerisque
+		sem, eget placerat sem tellus sit amet odio. Aliquam erat volutpat.
+		Maecenas mattis, nibh in lobortis hendrerit, justo lorem volutpat
+		orci, sit amet iaculis ligula nisi at massa. Nunc tempor egestas
+		lectus ut hendrerit. Nulla iaculis arcu ullamcorper tellus volutpat,
+		non cursus ligula ultricies. Mauris imperdiet lacus in eros mattis
+		fringilla. Donec purus felis, elementum eu fermentum vitae, finibus
+		nec est. Curabitur eu purus nisi. Nulla gravida sem eget pulvinar
+		sodales.</p>
+
+	<div>
+		<p class="specialP">
+			Sed malesuada venenatis libero id venenatis. <span>Suspendisse</span>
+			ac porta est. Quisque vitae aliquet metus. Cras at lacinia nunc, quis
+			lobortis lectus. Sed nulla tellus, commodo finibus maximus ornare,
+			pretium ac mi. Nunc eget neque quis dui elementum sollicitudin. Sed
+			nec bibendum ante. Aenean quis libero quis quam mollis ultricies ut a
+			enim. Nunc feugiat ullamcorper cursus. Donec blandit, lectus vel
+			blandit luctus, nisl tellus tempor purus, in lobortis urna elit vitae
+			turpis. Phasellus at ornare velit. Interdum et malesuada fames ac
+			ante ipsum primis in faucibus. Donec ultricies blandit turpis sit
+			amet facilisis. Praesent luctus nisl sed augue iaculis, vel imperdiet
+			nunc tempor. Aliquam in venenatis lectus. Donec quis tortor sapien.
+		</p>
+		
+		<p class="specialP">Sed malesuada venenatis libero id venenatis.
+			Suspendisse ac porta est. Quisque vitae aliquet metus. Cras at
+			lacinia nunc, quis lobortis lectus. Sed nulla tellus, commodo finibus
+			maximus ornare, pretium ac mi. Nunc eget neque quis dui elementum
+			sollicitudin. Sed nec bibendum ante. Aenean quis libero quis quam
+			mollis ultricies ut a enim. Nunc feugiat ullamcorper cursus. Donec
+			blandit, lectus vel blandit luctus, nisl tellus tempor purus, in
+			lobortis urna elit vitae turpis. Phasellus at ornare velit. Interdum
+			et malesuada fames ac ante ipsum primis in faucibus. Donec ultricies
+			blandit turpis sit amet facilisis. Praesent luctus nisl sed augue
+			iaculis, vel imperdiet nunc tempor. Aliquam in venenatis lectus.
+			Donec quis tortor sapien.</p>
+		
+		<p><b>Phasellus eget ornare eros.</b> Nunc vitae leo in mauris bibendum
+			faucibus ac volutpat odio. Morbi luctus orci ex, et feugiat quam
+			efficitur id. Vestibulum a tellus condimentum, mattis ante eu,
+			euismod tortor. Proin ut eleifend nulla, et molestie mauris. Proin
+			leo nibh, suscipit luctus cursus sed, consectetur euismod eros.
+			Curabitur bibendum tempor eros, et maximus tellus euismod non. Donec
+			nec gravida tortor. Mauris quis ante eget tortor convallis congue.
+			Orci varius natoque penatibus et magnis dis parturient montes,
+			nascetur ridiculus mus. Morbi non euismod enim. Vestibulum tincidunt
+			leo ut lectus fringilla, nec varius massa mattis.</p>
+	</div>
+	<h3>Title 1</h3>
+	<p>In hac habitasse platea dictumst. Fusce venenatis sit amet magna
+		vitae sagittis. In egestas, urna at bibendum tincidunt, ligula libero
+		dapibus velit, id tincidunt lorem tellus eget ante. Nulla imperdiet
+		laoreet nisl, tempor sollicitudin nisi placerat a. Cras ac magna sit
+		amet erat aliquet finibus. Aenean faucibus id metus at pulvinar.
+		Praesent urna tellus, rhoncus in congue sit amet, iaculis vel nunc.
+		Cras tempor libero nec placerat varius. Donec congue lacus orci, ac
+		scelerisque nunc sodales in. Donec non ante nibh.</p>
+
+	<h2>Title 2</h2>
+	<p>Maecenas dignissim condimentum erat, eget feugiat dolor
+		imperdiet eu. Curabitur blandit commodo fermentum. Morbi elementum
+		sapien vel risus elementum pretium. Etiam sagittis dapibus mauris et
+		blandit. Nulla molestie leo in viverra maximus. Mauris sodales libero
+		at augue molestie, a iaculis tortor ultricies. Nulla fringilla
+		ultrices elit. Fusce bibendum blandit egestas. Aenean facilisis, ante
+		eget cursus aliquet, lorem nibh rutrum velit, vel tincidunt justo est
+		vel ex. Curabitur ultricies tempus tempus.</p>
+
+</body>
+</html>
